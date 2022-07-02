@@ -64,10 +64,11 @@ public Transform cam;
    {
     isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-    if (isGrounded && velocity.y < 0)
-    {
-        velocity.y = 20f;
-    }
+    // if (isGrounded && velocity.y < 0)
+    // {
+    //     velocity.y = -20f;
+    // }
+    velocity.y = -20f;
 
     float horizontal = Input.GetAxisRaw("Horizontal");
     float vertical = Input.GetAxisRaw("Vertical");
