@@ -30,7 +30,7 @@ public class NewBehaviourScript : MonoBehaviour
         //yInput = 2f;
     }
     private void Move(){
-        rb.AddForce(new Vector3(xInput, 0f, 0f)*moveSpeed);
+        rb.AddForce(new Vector3(xInput * 5, 0f, 1)*moveSpeed);
         
     }
 }
