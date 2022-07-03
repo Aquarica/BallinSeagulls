@@ -32,6 +32,7 @@ public class NewPlayerController : MonoBehaviour
     private float groundCheckRadius;
 
     public float maxSpeed;
+    
 
     [SerializeField]
     private float moveForce;
@@ -62,33 +63,34 @@ public class NewPlayerController : MonoBehaviour
     /// <param name="verticalTilt">Scales force applied in the forward direction (Ranges between 1 and -1)</param>
     /// <param name="horizontalTilt">Scales force applied in the horizontal direction (Ranges between 1 and -1)</param>
     /// <param name="right">The horizontal direction</param>
-    public void Move(/*float verticalTilt, float horizontalTilt,*/ Vector3 right)
+
+    public void Move(float verticalTilt, float horizontalTilt, Vector3 right)
     {
         // Only apply movement when the player is grounded
-        if (OnGround())
-        {
+        // if (OnGround())
+        // {
             CalculateFloorNormal();
 
             // No input from player
-            if (/*horizontalTilt == 0.0f && verticalTilt == 0.0f && */rigidBody.velocity.magnitude > 0.0f)
-            {
-                rigidBody.velocity = Vector3.Lerp(rigidBody.velocity, Vector3.zero, moveForce * 0.1f * Time.deltaTime); // Slow down
-            }
-            else
-            {
+            // if (horizontalTilt == 0.0f/* && verticalTilt == 0.0f*/ && rigidBody.velocity.magnitude > 0.0f)
+            // {
+            //     rigidBody.velocity = Vector3.Lerp(rigidBody.velocity, Vector3.zero, moveForce * 0.1f * Time.deltaTime); // Slow down
+            // }
+            //else
+            //{
                 // Get a direction perpendicular to the camera's right vector and the floor's normal (The forward direction)
                 Vector3 forward = Vector3.Cross(right, floorNormal);
 
                 // Apply moveForce scaled by verticalTilt in the forward direction (Half the move force when moving backwards)
-                Vector3 forwardForce = /*(verticalTilt > 0.0f ? 1.0f : 0.5f)*/ 0.5f * moveForce/* * verticalTilt*/ * forward;
+                Vector3 forwardForce = /*(verticalTilt > 0.0f ? 1.0f : 0.5f) */ 1.0f * moveForce * verticalTilt * forward;
                 // Apply moveForce scaled by horizontalTilt in the right direction
-                Vector3 rightForce = moveForce/* * horizontalTilt*/  * right;
+                Vector3 rightForce = moveForce * horizontalTilt  * right;
 
                 Vector3 forceVector = forwardForce + rightForce;
 
                 rigidBody.AddForce(forceVector);
-            }
-        }
+            //}
+        //}
     }
 
     /// <summary>

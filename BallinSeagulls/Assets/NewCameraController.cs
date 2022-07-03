@@ -56,7 +56,7 @@ public class NewCameraController : MonoBehaviour
             verticalTilt = Input.GetAxis("Vertical");
             horizontalTilt = Input.GetAxis("Horizontal");
 
-            player.Move(/*verticalTilt, horizontalTilt, */transform.right);
+            player.Move(verticalTilt, horizontalTilt, transform.right);
         }
     }
 
@@ -163,6 +163,7 @@ public class NewCameraController : MonoBehaviour
 
         // Position the camera behind target at a distance of offset
         transform.position = player.transform.position - (transform.forward * offset);
+
         transform.LookAt(player.transform.position);
     }
 }

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 317472188}
   - component: {fileID: 317472187}
   - component: {fileID: 317472186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Track2-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,10 +305,10 @@ MonoBehaviour:
   spiralTimer: 0
   spiralSpeed: 1
   spiralSpeedMultiplier: 3
-  maxVerticalAngle: 15
+  maxVerticalAngle: 30
   maxHorizontalAngle: 10
   tiltSpeed: 75
-  offset: 4
+  offset: 6
   useFloorNormal: 0
 --- !u!1 &1255250979
 GameObject:
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 1255250983}
   - component: {fileID: 1255250982}
   - component: {fileID: 1255250981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Track2-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 1645876590}
   - component: {fileID: 1645876589}
   - component: {fileID: 1645876588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Track2-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,14 +434,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645876586}
-  m_LocalRotation: {x: 0.3967131, y: 0.58533657, z: -0.39671305, w: -0.5853363}
-  m_LocalPosition: {x: -102.77884, y: 579.60144, z: 729.66504}
+  m_LocalRotation: {x: 0.47838053, y: 0.5207228, z: -0.47838044, w: -0.5207226}
+  m_LocalPosition: {x: -102.772675, y: 579.5962, z: 729.8333}
   m_LocalScale: {x: 12.671722, y: 119.77741, z: 13.717193}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 641225228}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 68.255}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 85.146}
 --- !u!64 &1645876588
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 1820131346}
   - component: {fileID: 1820131345}
   - component: {fileID: 1820131344}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Track2-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -806,7 +806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968864514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -502.74, y: 1084.5, z: 761.2}
+  m_LocalPosition: {x: -502.74, y: 1031.7, z: 728.1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -830,10 +830,10 @@ MonoBehaviour:
   floorNormal: {x: 0, y: 0, z: 0}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   groundCheckRadius: 0.25
   maxSpeed: 100
-  moveForce: 15
+  moveForce: 35
   victoryForce: 25
 --- !u!1 &2126651684
 GameObject:
@@ -861,14 +861,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126651684}
-  m_LocalRotation: {x: -0.53729963, y: -0, z: -0, w: 0.8433914}
-  m_LocalPosition: {x: -102.730316, y: 758.82086, z: 583.5857}
+  m_LocalRotation: {x: -0.62555474, y: -0, z: -0, w: 0.78018034}
+  m_LocalPosition: {x: -102.8, y: 706.5, z: 550.8}
   m_LocalScale: {x: 73.01126, y: 73.01126, z: 73.01126}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 641225228}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -65, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -77.446, y: 0, z: 0}
 --- !u!64 &2126651686
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1010,7 +1010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134194982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
