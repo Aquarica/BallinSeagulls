@@ -8926,6 +8926,9 @@ MonoBehaviour:
   tiltSpeed: 75
   offset: 6
   useFloorNormal: 0
+  currentScene:
+    m_Handle: 0
+  sceneName: 
 --- !u!4 &1663263400
 Transform:
   m_ObjectHideFlags: 0
@@ -9809,7 +9812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805485914}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 1219, z: 1041}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

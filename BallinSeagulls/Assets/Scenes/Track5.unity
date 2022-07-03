@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 8ae6280d2a3da7844ba905babc251a3e, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -12785,13 +12785,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spiralTimer: 0
-  spiralSpeed: 1
-  spiralSpeedMultiplier: 3
+  spiralSpeed: 100
+  spiralSpeedMultiplier: 100
   maxVerticalAngle: 30
   maxHorizontalAngle: 10
-  tiltSpeed: 75
+  tiltSpeed: 1000
   offset: 6
   useFloorNormal: 0
+  currentScene:
+    m_Handle: 0
+  sceneName: 
 --- !u!1 &960616837
 GameObject:
   m_ObjectHideFlags: 0
@@ -25065,7 +25068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805485914}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -127, y: 1438, z: 627}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
