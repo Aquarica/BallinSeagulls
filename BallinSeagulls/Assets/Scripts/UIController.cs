@@ -28,6 +28,7 @@ public class UIController : MonoBehaviour
         // speedText.text = player.rigidBody.velocity.magnitude.ToString("F2") + "m/s"; // "F2" makes it so only 2 decimal points are displayed
 
         // If player's in a NORMAL state
+        // error caused by GameManager and NewPlayerController
         if (player.currentState == NewPlayerController.State.NORMAL || (player.currentState == NewPlayerController.State.DEAD && gm.timer <= 0.0f))
         {
             string timer = gm.timer.ToString("F2");

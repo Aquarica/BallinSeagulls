@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
 
     // public int playerScore;
 
-    public float timer;
+    // public float timer = 60;
+    public float timer = 60;
 
     // Start is called before the first frame update
     void Start()
