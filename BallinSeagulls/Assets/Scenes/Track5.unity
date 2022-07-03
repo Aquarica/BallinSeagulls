@@ -12785,11 +12785,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spiralTimer: 0
-  spiralSpeed: 1
-  spiralSpeedMultiplier: 3
+  spiralSpeed: 100
+  spiralSpeedMultiplier: 100
   maxVerticalAngle: 30
   maxHorizontalAngle: 10
-  tiltSpeed: 75
+  tiltSpeed: 1000
   offset: 6
   useFloorNormal: 0
   currentScene:
