@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2020673684099074944}
   - component: {fileID: 1497974882377904854}
+  - component: {fileID: 6720164829627739661}
   m_Layer: 0
   m_Name: CarA
   m_TagString: Untagged
@@ -131,7 +132,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbca4d6acfa346d4db386ea00b10465e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -216,6 +217,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6720164829627739661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675674064016167226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90549d259e4be94489265523e90c03a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757703639527663910
 GameObject:
   m_ObjectHideFlags: 0
