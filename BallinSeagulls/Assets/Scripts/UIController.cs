@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class UIController : MonoBehaviour
 
     // public Text scoreText;
     // public Text speedText;
-    public Text secsText;
-    public Text secsDecimalText;
+    public TextMeshProUGUI secsText;
+    public TextMeshProUGUI secsDecimalText;
 
     // Start is called before the first frame update
     void Start()
