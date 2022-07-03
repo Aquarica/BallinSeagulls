@@ -35,6 +35,14 @@ void OnTriggerEnter (Collider other)
     {
     SceneManager.LoadScene(5);   
     }
+    if(SceneManager.GetActiveScene()== SceneManager.GetSceneByName("Track5"))
+    {
+    SceneManager.LoadScene(6);   
+    }
+    if(SceneManager.GetActiveScene()== SceneManager.GetSceneByName("Track6"))
+    {
+    SceneManager.LoadScene(0);   
+    }
 }
 
 // void OnTriggerEnter (Collider deathBox)
