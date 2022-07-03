@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewCameraController : MonoBehaviour
 {
@@ -40,6 +41,9 @@ public class NewCameraController : MonoBehaviour
     [SerializeField]
     private bool useFloorNormal;
 
+            public Scene currentScene;
+            public string sceneName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +51,10 @@ public class NewCameraController : MonoBehaviour
         player = FindObjectOfType<NewPlayerController>();  // Find player
 
         initialXRotation = transform.eulerAngles.x;     // Store initial x rotation
+
+
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
     }
 
     void FixedUpdate()
@@ -66,6 +74,15 @@ public class NewCameraController : MonoBehaviour
         // {
         //     CameraTilt();
         // }
+        if(Input.GetKeyDown("escape"))
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        if(Input.GetKeyDown("r"))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 
     // Update is called once per frame
