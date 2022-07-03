@@ -13,8 +13,9 @@ public class Honk : MonoBehaviour
     }
 
     // plays on a detected collision
-    void OnCollisonEnter(Collision collision) 
+    void OnTriggerEnter(Collider collider) 
     {
+        Debug.Log("Play sound");
         source.Play();
     }
 }
