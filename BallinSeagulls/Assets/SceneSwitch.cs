@@ -19,9 +19,21 @@ public class SceneSwitch : MonoBehaviour
 
 void OnTriggerEnter (Collider other)
 {
-    if(SceneManager.GetActiveScene()== SceneManager.GetSceneByName("DevTest"))
+    if(SceneManager.GetActiveScene()== SceneManager.GetSceneByName("Track1"))
     {
-    SceneManager.LoadScene(1);   
+    SceneManager.LoadScene(2);   
+    }
+    if(SceneManager.GetActiveScene()== SceneManager.GetSceneByName("Track2"))
+    {
+    SceneManager.LoadScene(3);   
+    }
+    if(SceneManager.GetActiveScene()== SceneManager.GetSceneByName("Track3"))
+    {
+    SceneManager.LoadScene(4);   
+    }
+    if(SceneManager.GetActiveScene()== SceneManager.GetSceneByName("Track4"))
+    {
+    SceneManager.LoadScene(5);   
     }
 }
 
