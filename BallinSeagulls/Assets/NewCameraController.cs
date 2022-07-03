@@ -56,7 +56,7 @@ public class NewCameraController : MonoBehaviour
             verticalTilt = Input.GetAxis("Vertical");
             horizontalTilt = Input.GetAxis("Horizontal");
 
-            player.Move(verticalTilt, horizontalTilt, transform.right);
+            player.Move(/*verticalTilt, horizontalTilt, */transform.right);
         }
     }
 
