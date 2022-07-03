@@ -56,6 +56,11 @@ public class NewCameraController : MonoBehaviour
         currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
     }
+    // void Awake()
+    // {
+    //     Application.targetFrameRate = 20; 
+
+    // }
 
     void FixedUpdate()
     {
