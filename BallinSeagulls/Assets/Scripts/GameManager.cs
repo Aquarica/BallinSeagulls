@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private PlayerController player;
+    private NewPlayerController player;
     // may want to remove victoryCoroutine but probably not
     private Coroutine victoryCoroutine;
 
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<PlayerController>();  // Find player
+        player = FindObjectOfType<NewPlayerController>();  // Find player
         currentScene = SceneManager.GetActiveScene().name; // Get active scene name
     }
 
@@ -36,17 +36,17 @@ public class GameManager : MonoBehaviour
     {
         switch (player.currentState)
         {
-            case PlayerController.State.NORMAL:
+            case NewPlayerController.State.NORMAL:
                 timer -= Time.deltaTime;    // Decrement timer
 
                 // Timer runs out
                 if (timer < 0.0f)
                 {
                     // may want to change this later to lose state (50% sure dead is lose state)
-                    player.currentState = PlayerController.State.DEAD;  // Set player's state to DEAD
+                    player.currentState = NewPlayerController.State.DEAD;  // Set player's state to DEAD
                 }
                 break;
-            case PlayerController.State.VICTORY:
+            case NewPlayerController.State.VICTORY:
                 if (victoryCoroutine == null)
                     victoryCoroutine = StartCoroutine(Victory());       // Start victory procedure
                 break;

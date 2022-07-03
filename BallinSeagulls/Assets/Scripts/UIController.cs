@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     private GameManager gm;
-    private PlayerController player;
+    private NewPlayerController player;
 
     // public Text scoreText;
     // public Text speedText;
@@ -17,7 +17,7 @@ public class UIController : MonoBehaviour
     void Start()
     {
         gm = FindObjectOfType<GameManager>();           // Find GameManager
-        player = FindObjectOfType<PlayerController>();  // Find player
+        player = FindObjectOfType<NewPlayerController>();  // Find player
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class UIController : MonoBehaviour
         // speedText.text = player.rigidBody.velocity.magnitude.ToString("F2") + "m/s"; // "F2" makes it so only 2 decimal points are displayed
 
         // If player's in a NORMAL state
-        if (player.currentState == PlayerController.State.NORMAL || (player.currentState == PlayerController.State.DEAD && gm.timer <= 0.0f))
+        if (player.currentState == NewPlayerController.State.NORMAL || (player.currentState == NewPlayerController.State.DEAD && gm.timer <= 0.0f))
         {
             string timer = gm.timer.ToString("F2");
 
