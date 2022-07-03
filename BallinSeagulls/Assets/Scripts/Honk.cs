@@ -13,7 +13,7 @@ public class Honk : MonoBehaviour
     }
 
     // plays on a detected collision
-    void OnCollisonEnter() 
+    void OnCollisonEnter(Collision collision) 
     {
         source.Play();
     }
